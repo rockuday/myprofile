@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>About</title>
+    <style>
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            /* padding-left:0% */
+            box-sizing: border-box;
+        }
+
+        body {
+            background-image: url("bg.jpg");
+            width: 1200px;
+        }
+
+        .header {
+
+            position: absolute;
+            border: solid 2px lightblue;
+            border-top: #d1d1d1;
+            border-left: #d1d1d1;
+            border-right: #d1d1d1;
+            width: 100%;
+            padding: 30px 6%;
+            padding-bottom: 0;
+            padding-left: 0;
+            background-color: transparent;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #d1d1d1;
+            font-size: xx-large;
+            text-decoration: none;
+        }
+
+        .navbar a {
+            color: #d1d1d1;
+            font-size: large;
+            margin: 28px;
+            text-decoration: none;
+            transition: 0.2s;
+
+        }
+
+        a:hover {
+            color: red;
+
+
+        }
+
+
+.skills {
+  position:absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:transparent;
+  border: 7px solid gray;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.skills-bar {
+  padding: 25px 30px;
+}
+
+.skills-bar .bar {
+  margin: 25px 0;
+}
+
+.skills-bar .bar .info span {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}
+
+.skills-bar .bar .info {
+  margin-bottom: 8px;
+}
+
+.skills-bar .bar .progress-line {
+  position: relative;
+  height: 10px;
+  width: 550px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span {
+  position: absolute;
+  background: rgb(10, 157, 157);
+  height: 100%;
+  border-radius: 10px;
+  transform: scaleX(0);
+  transform-origin: left;
+  animation: animate 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+@keyframes animate {
+  100% {
+      transform: scaleX(1);
+  }
+}
+
+.progress-line .html {
+  width: 80%;
+}
+
+.progress-line .css {
+  width: 70%;
+}
+
+.progress-line .javascript {
+  width: 62%;
+}
+
+.progress-line .c {
+  width: 90%;
+}
+
+.bar .progress-line span::before {
+  position: absolute;
+  content: "";
+  height: 0;
+  right: 0;
+  top: -14px;
+  width: 0;
+  border: 7px solid transparent;
+  border-bottom-width: 0px;
+  border-right-width: 0px;
+  border-top-style: #f0f0f0;
+  border-top-color: #07374a;
+}
+
+.bar .progress-line span::after {
+  position: absolute;
+  right: 0;
+  top: -28px;
+  color: #f0f0f0;
+  font-size: 12px;
+  font-weight: 700;
+  background: #07374a;
+  padding: 1px 8px;
+  border-radius: 3px;
+}
+
+.progress-line .html::after {
+  content: "80%";
+}
+
+.progress-line .css::after {
+  content: "80%";
+}
+
+.progress-line .javascript::after {
+  content: "62%";
+}
+
+.progress-line .c::after {
+  content: "90%";
+}
+
+@media (max-width: 700px) {
+  .skills {
+      width: 80%;
+      left: 50%;
+      transform: translateX(-50%);
+  }
+
+  .skills-bar .bar .progress-line {
+      width: 100%;
+  }
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  height: 80px;
+  margin: 0 auto;
+}
+
+nav img {
+  width: 110px;
+}
+
+nav #links {
+  display: flex;
+  align-items: center;
+}
+
+nav #links a {
+  margin-left: 50px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  color: black;
+  font-weight: 700;
+  opacity: 0.6;
+  letter-spacing: 4px;
+}
+
+nav #links i {
+  margin-left: 50px;
+}
+
+nav #links a:nth-child(2) {
+  opacity: 0.2;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <header class="header">
+            <!-- <a href="" class="logo">Uday's Portfolio</a>
+             -->
+             <pre class="logo" >Uday's Portfolio </pre>
+            <nav class="navbar">
+                <a class="navitem" href="#" onclick="redirectToHome()">Home</a>
+                <a class="navitem" href="#" onclick="redirectToAbout()">About</a>
+                <a class="navitem" href="#" onclick="redirectToEducation()">Education</a>
+                <a class="navitem" href="#" onclick="redirectToSkills()">Skills</a>
+                <a class="navitem" href="#" onclick="redirectToContact()">Contact</a>
+                <a class="navitem" href="#" onclick="redirectToProjects()">Projects</a>
+
+            </nav>
+        </header>
+    </nav>
+    <div class="skills">
+
+        <div class="skills-bar">
+
+            <div class="bar">
+                <div class="info">
+                    <span>HTML</span>
+                </div>
+                <div class="progress-line"><span class="html"></span></div>
+            </div>
+
+
+            <div class="bar">
+                <div class="info">
+                    <span>CSS</span>
+                </div>
+                <div class="progress-line"><span class="css"></span></div>
+            </div>
+
+
+            <div class="bar">
+                <div class="info">
+                    <span>JavaScript</span>
+                </div>
+                <div class="progress-line">
+                    <span class="javascript"></span>
+                </div>
+            </div>
+
+
+            <div class="bar">
+                <div class="info">
+                    <span>C Programming</span>
+                </div>
+                <div class="progress-line"><span class="c"></span></div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function redirectToHome() {
+            window.location.href = 'res.html';
+        }
+        function redirectToAbout() {
+            window.location.href = 'about.html';
+        }
+        function redirectToContact() {
+            window.location.href = 'contact.html';
+        }
+        function redirectToEducation() {
+            window.location.href = 'education.html';
+        }
+        function redirectToSkills() {
+            window.location.href = 'skill.html';
+        }
+        function redirectToProjects() {
+            window.location.href = 'Projects.html';
+        }
+    </script>
+
+
+</body>
+
+</html>
+
+

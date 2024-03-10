@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <a href="" class="logo">Uday's Portfolio</a>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a class="navitem" href="#"  onclick="redirectToAbout()">About</a>
+            <a class="navitem" href="#"  onclick="redirectToEducation()">Education</a>
+            <a class="navitem" href="#"  onclick="redirectToSkills()">Skills</a>
+            <a class="navitem" href="#"  onclick="redirectToContact()">Contact</a>
+            
+            <a class="navitem" href="#" onclick="redirectToProjects()">Projects</a>
+
+        </nav>
+    </header>
+
+    
+    <div id="left">
+        <div id="smline"></div>
+        <h4 class="leftitem1">Hello, I am </h4>
+        <h5 class="leftitem">Uday Ranjan</h5>
+        <h5 class="leftitem">a web-developer from <span id="lblue">India.</span></h5>
+      
+    </div>
+</div>
+<script>
+    function redirectToAbout(){
+        window.location.href='about.html';
+    }
+    function redirectToContact(){
+        window.location.href='contact.html';
+    }
+function redirectToEducation() {
+   window.location.href = 'education.html';
+}
+function redirectToSkills() {
+         window.location.href = 'skill.html';
+    }
+    function redirectToProjects() {
+            window.location.href = 'Projects.html';
+        }
+</script>
+
+ 
+</body>
+</html>

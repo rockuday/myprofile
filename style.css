@@ -1,0 +1,96 @@
+*{
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+   background-image: url("bg.jpg");
+   width: 1200px;
+}
+.header{
+
+    position: fixed;
+    border: solid 2px lightblue;
+    border-top: #d1d1d1;
+    border-left: #d1d1d1;
+    border-right: #d1d1d1;
+    width: 100%;
+    padding: 32px 9% ;
+    background-color:transparent;
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+}
+.logo{
+    color:  #d1d1d1;
+    font-size: xx-large;
+    text-decoration: none;
+}
+.navbar a{
+    color:  #d1d1d1;
+    font-size: large;
+    margin: 28px;
+    text-decoration: none;
+    transition: 0.2s;
+
+}
+a:hover{
+    color: red;
+    
+   
+}
+
+
+
+.firstsection{
+    display: flex;
+    justify-content: space-around;
+    margin: 22px 0;
+}
+#left {
+    width: 50%;
+    height: 100%;
+    padding: 100px;
+    margin-left: 20px;
+    
+}
+
+#left #smline {
+    width: 90px;
+    height: 3px;
+    margin-top: 100px;
+    /* background-color: rgb(17, 17, 167); */
+}
+
+#left h4 {
+    font-size: 50px;
+    margin-top: 10px;
+    font-family: "Gilroy ☞", sans-serif;
+}
+
+#left img {
+    width: 650px;
+    margin-top: 30px;
+}
+
+#left > h5 {
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 12px;
+    margin-top: 20px;
+    font-weight: 700;
+    color: #d1d1d1;
+}
+
+#left > h5 span {
+    color: rgb(82, 184, 218);
+}
+.leftitem1{
+    color: rgb(82, 184, 218);
+}
+.pic{
+    text-align: left;
+    height: 1000px;
+}

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("bg.jpg");
+
+            margin: 0;
+            padding: 0;
+            width: 1200px;
+        }
+
+        * {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+        .header {
+
+            position: fixed;
+            border: solid 2px lightblue;
+            border-top: #d1d1d1;
+            border-left: #d1d1d1;
+            border-right: #d1d1d1;
+            width: 100%;
+            padding: 32px 9%;
+            background-color: transparent;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: #d1d1d1;
+            font-size: xx-large;
+            text-decoration: none;
+        }
+
+        .navbar a {
+            color: #d1d1d1;
+            font-size: large;
+            margin: 28px;
+            text-decoration: none;
+            transition: 0.2s;
+
+        }
+
+        a:hover {
+            color: red;
+
+
+        }
+
+        .heading {
+            position: absolute;
+            top: 150px;
+            left: 650px;
+            color: aqua;
+            font-size: xx-large;
+
+        }
+
+        .class {
+            position: fixed;
+            /* justify-content: center; */
+            margin-left: 38vw;
+            margin-top: 25vh;
+            font-size: 24px;
+            white-space: normal;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 60px;
+           
+
+            background-color:transparent;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: absolute;
+            top: 140px;
+            left: 470px;
+            border: 5px solid gray;
+            /* rgb(103, 231, 218) */
+
+        }
+
+        .pro {
+            text-decoration: none;
+            color:white;
+        }
+        li::marker {
+  color: brown;
+}
+    </style>
+</head>
+
+<body>
+    <nav>
+
+        <header class="header">
+            <a href="" class="logo">Uday's Portfolio</a>
+            <nav class="navbar">
+                <a class="navitem" href="#" onclick="redirectToHome()">Home</a>
+                <a class="navitem" href="#" onclick="redirectToAbout()">About</a>
+                <a class="navitem" href="#" onclick="redirectToEducation()">Education</a>
+                <a class="navitem" href="#" onclick="redirectToSkills()">Skills</a>
+                <a class="navitem" href="#" onclick="redirectToContact()">Contact</a>
+                <a class="navitem" href="#" onclick="redirectToProjects()">Projects</a>
+
+            </nav>
+        </header>
+    </nav>
+    <div class="class">
+        <ul  >
+            <li>
+                <a class="pro" href="%"> Sliding login and registration forms </a>
+
+            </li>
+            
+
+            <li>
+                <a class="pro" href="task.html"> Task Tracker Project </a>
+            </li>
+            
+            <li>
+                <a class="pro" href="#"> Student Grade Calculator </a>
+
+            </li>
+            
+
+            <li>
+                <a class="pro" href="#"> Slide Down a Navigation Bar on Scroll </a>
+
+
+            </li>
+            
+            <li>
+
+
+                <a class="pro" href="bmi.html"> BMI Calculator </a>
+
+            </li>
+            
+            <li>
+
+                <a class="pro" href="#"> Detect network speed </a>
+            </li>
+            
+            <li>
+
+                <a class="pro" href="#"> Analog Clock </a>
+
+            </li>
+            
+            <li>
+
+                <a class="pro" href="#"> Pay Role Management Webpage </a>
+
+
+            </li>
+            
+
+            <li>
+
+                <a class="pro" href="#">Mousemove parallax </a>
+
+
+
+            </li>
+            
+            <li>
+
+
+
+                <a class="pro" href="text.html"> Text to Speech Converter </a>
+
+
+            </li>
+            
+         
+            
+            <li>
+
+
+                
+        <a class="pro" href="#">AI Image Generator </a>
+         
+
+
+            </li>
+            
+
+        </ul>
+
+
+
+
+
+
+
+    </div>
+
+
+    <script>
+         function redirectToHome() {
+            window.location.href = 'res.html';
+        }
+        function redirectToAbout() {
+            window.location.href = 'about.html';
+        }
+        function redirectToContact() {
+            window.location.href = 'contact.html';
+        }
+        function redirectToEducation() {
+            window.location.href = 'education.html';
+        }
+        function redirectToSkills() {
+            window.location.href = 'skill.html';
+        }
+        function redirectToProjects() {
+            window.location.href = 'Projects.html';
+        }
+    </script>
+</body>
+
+</html>

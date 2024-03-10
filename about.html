@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="about.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+  <title>About</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url("bg.jpg");
+
+      margin: 0;
+      padding: 0;
+      width: 1200px;
+    }
+
+    * {
+      font-family: "Poppins", sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+
+    .header {
+
+      position: fixed;
+      border: solid 2px lightblue;
+      border-top: #d1d1d1;
+      border-left: #d1d1d1;
+      border-right: #d1d1d1;
+      width: 100%;
+      padding: 32px 9%;
+      background-color: transparent;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      color: #d1d1d1;
+      font-size: xx-large;
+      text-decoration: none;
+    }
+
+    .navbar a {
+      color: #d1d1d1;
+      font-size: large;
+      margin: 28px;
+      text-decoration: none;
+      transition: 0.2s;
+
+    }
+
+    a:hover {
+      color: red;
+
+
+    }
+    .about{
+      position: absolute;
+      top: 200px;
+      left: 300px;
+      right: 250px;
+      border: 7px solid grey;
+      font-size: x-large;
+      text-transform: capitalize;
+      padding: 42px;
+      color: #d1d1d1;
+    }
+  </style>
+</head>
+
+<body>
+  <nav>
+
+    <header class="header">
+      <a href="" class="logo">Uday's Portfolio</a>
+      <nav class="navbar">
+        <a class="navitem" href="#" onclick="redirectToHome()">Home</a>
+        <a class="navitem" href="#" onclick="redirectToAbout()">About</a>
+        <a class="navitem" href="#" onclick="redirectToEducation()">Education</a>
+        <a class="navitem" href="#" onclick="redirectToSkills()">Skills</a>
+        <a class="navitem" href="#" onclick="redirectToContact()">Contact</a>
+        <a class="navitem" href="#" onclick="redirectToProjects()">Projects</a>
+      </nav>
+    </header>
+  </nav>
+
+  <div class="about_container">
+
+    <p class="about">
+      Welcome to Our Website.Hello and thank you for visiting! We're delighted to welcome you to our website.Here,
+      you'll discover a world of information, services, and resources designed to cater to your needs.Feel free to
+      explore and make yourself at home. If you have any questions or suggestions, don't hesitate to reach out. We're
+      thrilled to have you with us on this journey.
+    </p>
+
+  </div>
+  <script>
+    function redirectToHome() {
+      window.location.href = 'res.html';
+    }
+    function redirectToAbout() {
+      window.location.href = 'about.html';
+    }
+    function redirectToContact() {
+      window.location.href = 'contact.html';
+    }
+    function redirectToEducation() {
+      window.location.href = 'education.html';
+    }
+    function redirectToSkills() {
+      window.location.href = 'skill.html';
+      
+    }
+    function redirectToProjects() {
+            window.location.href = 'Projects.html';
+        }
+  </script>
+
+
+</body>
+
+</html>
