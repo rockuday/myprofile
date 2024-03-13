@@ -1,0 +1,181 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+
+<head> 
+	<meta charset="UTF-8"> 
+	<meta name="viewport"
+		content="width=device-width, initial-scale=1.0"> 
+	<title> 
+	AI Image generator Website 
+	 
+	</title> 
+	<style>
+        body { 
+	padding: 0; 
+	margin: 0; 
+	box-sizing: border-box; 
+} 
+
+.main-container { 
+	display: flex; 
+	align-items: center; 
+	justify-content: center; 
+} 
+
+.container { 
+	padding: 20px; 
+	border: 2px solid #ccc; 
+	width: 50%; 
+	border-radius: 10px; 
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); 
+	display: flex; 
+	flex-direction: column; 
+	align-items: center; 
+	justify-content: center; 
+	background-repeat: no-repeat; 
+	background-size: cover; 
+	color: #fff; 
+} 
+
+.heading { 
+	color: #318C46; 
+} 
+
+.headings-container { 
+	text-align: center; 
+	color: #000; 
+} 
+
+.form-controls { 
+	padding: 10px; 
+	border-radius: 5px; 
+	border: none; 
+} 
+
+.form-input:focus { 
+	outline: none; 
+} 
+
+.image-generate-btn { 
+	background-color: #318C46; 
+	cursor: pointer; 
+	color: #fff; 
+} 
+
+#imageContainerText { 
+	color: #000; 
+} 
+
+.image-container { 
+	margin: 50px 0; 
+	display: none; 
+	text-align: center; 
+} 
+
+.my-generated-image { 
+	width: 100%; 
+	height: 350px; 
+} 
+
+@media screen and (min-width: 280px) and (max-width: 920px) { 
+	.container { 
+		width: 100%; 
+	} 
+
+	.my-generated-image { 
+		width: 100%; 
+		height: 300px; 
+	} 
+}
+
+    </style>
+</head> 
+
+<body> 
+	<div class="main-container"> 
+		<div class="container"> 
+			<div class="headings-container"> 
+				<h1>IIITA</h1> 
+				<h2 class="heading"> 
+				AI Image generator website 
+				using JavaScript 
+				</h2> 
+				<h5 class="sub-heading"> 
+				Enter the text in the below input bar and 
+				<br /> 
+				get the AI generated image 
+				related to this text. 
+				</h5> 
+			</div> 
+
+			<div id="generate-image-form"
+				class="form-container"> 
+				<form class="my-form"> 
+					<input id="input-value"
+						placeholder="Enter some text..."
+						type="text"
+						class="form-input form-controls"> 
+					<button type="submit"
+							class="image-generate-btn 
+								form-controls"> 
+					Generate Image 
+					</button> 
+				</form> 
+			</div> 
+
+			<div id="images-visible"
+				class="image-container"> 
+				<p id="imageContainerText"></p> 
+				<img id="generated-image"
+					class="my-generated-image"
+					src='' alt="AI Generated Image"> 
+			</div> 
+		</div> 
+	</div> 
+
+	<script>
+        let generateImageForm = 
+	document.getElementById('generate-image-form'); 
+let formInput = 
+	document.getElementById('input-value'); 
+let imageContainerText = 
+	document.getElementById('imageContainerText'); 
+let imageGenerated = 
+	document.getElementById('generated-image'); 
+let imageContainer = 
+	document.getElementById('images-visible'); 
+
+async function fetchImages(category) { 
+	try { 
+		let response = 
+		await fetch(`use a API`); 
+		if (!response.ok) { 
+			throw new Error('Unable to fetch the data'); 
+		} 
+		imageContainerText.innerText = 
+		"Below is your generated Image:"; 
+		imageContainer.style.display = "block"; 
+		imageGenerated.src = response.url; 
+		console.log(response.url); 
+	} 
+	catch (error) { 
+		console.log(error); 
+	} 
+} 
+
+generateImageForm.addEventListener('submit', (e) => { 
+	e.preventDefault(); 
+	let enteredText = formInput.value; 
+	if (enteredText !== "") { 
+		fetchImages(enteredText); 
+	} 
+	else { 
+		imageContainerText.innerText = 
+			"Input field can not be empty!"; 
+	} 
+})
+
+    </script>
+</body> 
+
+</html>
